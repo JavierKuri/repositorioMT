@@ -1,0 +1,50 @@
+body {
+    background-color:whitesmoke;
+}
+
+td {
+    border: 2px solid orangered;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+th {
+    border: 2px solid orangered;
+    background-color: rgb(232, 115, 4);
+}
+
+table {
+    border: 3px solid white;
+    border-collapse: collapse;
+}
+
+.columna_principal {
+    background-color: rgba(243,168,71,1.00);
+    font-weight: bolder;
+    padding: 10px;
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through; 
+    color: gray; 
+}
+
+img {
+    border: 1px solid orangered;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+li {
+    list-style-type: square;
+    margin-bottom: 4px;
+}
+
+li::marker{
+    color:orangered;
+}
+
+h1, h2 {
+    text-shadow: 1px 1px 1px orangered;
+}

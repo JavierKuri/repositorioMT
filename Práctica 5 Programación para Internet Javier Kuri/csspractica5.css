@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+tr:nth-child(even) td {
+    background-color: #bec2f0;
+}
+
+tr:nth-child(odd) td {
+    background-color: rgb(164, 235, 253);
+}
+
+tr:hover{
+    color:red;
+    background-color: aqua;
+}
+
+h1 {
+    font-family:fantasy;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+h3 {
+    text-align: left;
+}

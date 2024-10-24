@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario P4 Javier Kuri</title>
+    <script>
+        function registro(){
+            x = "Nombre: " + document.getElementById("nombre").value;
+            x = x + ", Correo: " + document.getElementById("correo").value;
+            x = x + ", Edad: " + document.getElementById("edad").value;
+            if(document.getElementById("male").checked){
+                x = x + ", Genero: Macho";
+            }else if(document.getElementById("female").checked){
+                x = x + ", Genero: Hembra";
+            }else if(document.getElementById("otro").checked){
+                x = x + ", Genero: Otro";
+            }
+            x = x + ", Fecha de Nacimiento: " + document.getElementById("cumpleanos").value;
+            x = x + ", Color Favorito: " + document.getElementById("colorfav").value;
+            document.getElementById("resultado").innerHTML = x;
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulario P4 Javier Kuri</h1>
+    <h2>Ingrese sus datos:</h2>
+    <form>
+        Nombre: <input type="text"  id="nombre"> <br>
+        Correo: <input type="email"  id="correo"> <br>
+        Edad: <input type="number" id="edad"> <br>
+        <input type="radio" name="gender" id="male"> Male <br>
+        <input type="radio" name="gender" id="female"> Female <br>
+        <input type="radio" name="gender" id="other"> Otro <br>
+        Fecha de Nacimiento: <input type="date" id="cumpleanos"> <br>
+        Color favorito: <input type="color" id="colorfav"> <br>
+    </form>
+    <button type="button" onclick="registro()">Registrar</button>
+    <p id="resultado"></p>
+    <a href="../paginaprincipalmt.html" style="font-size: large;">Regresar a página principal de proyecto intermedio.</a>
+</body>
+</html>

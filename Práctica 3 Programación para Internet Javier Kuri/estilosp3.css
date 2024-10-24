@@ -1,0 +1,28 @@
+tr:nth-child(even) {
+    background-color:aqua;
+}
+
+tr:nth-child(odd) {
+    background-color:cornflowerblue;
+}
+
+th {
+    background-color: bisque;
+    font-size: large;
+}
+table, tr, th, td{
+    border: 1px solid black ;
+    padding:5px;
+    text-transform: capitalize;
+}
+
+img {
+    width:200px;
+    height:auto;
+}
+
+body {
+    background-color: beige;
+}
+
+/*prueba*/

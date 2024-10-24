@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones P4 Javier Kuri</title>
+    <script>
+        function calcular(){
+            var x = document.getElementById("calificacion").value;
+            if(x>=0 && x<6){
+                resultado = 'NA';
+            } else if ((x>=6 && x<7.5)){
+                resultado = 'S';
+            } else if ((x>=7.5 && x<9)){
+                resultado = 'B';
+            } else if ((x>=9 && x<10)){
+                resultado = 'MB';
+            } else if ((x==10)){
+                resultado = 'LAP';
+            } else {
+                alert("Calificación no válida");
+            }
+            document.getElementById("equivalencia").innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calificaciones P4 Javier Kuri</h1>
+    <form>
+        Calificación: <input type="number" id="calificacion"> <br> 
+    </form>
+    <button type="button" onclick="calcular()">Equivalencia de calificación.</button> <br>
+    <p id="equivalencia"></p>
+    <a href="../paginaprincipalmt.html" style="font-size: large;">Regresar a página principal de proyecto intermedio.</a>
+</body>
+</html>
